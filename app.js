@@ -4,25 +4,25 @@ const n2 = 15;
 const n3 = 20;
 const n4 = 5;
 
-const isDivisibleby5 = (n1 + n2 + n3 + n4)%5;
+const isDivisibleby5 = ((n1%5) + (n2%5) + (n3%5) + (n4%5));
 
-console.log(Boolean(isDivisibleby5));
-
-
+console.log(isDivisibleby5===0);
 
 
 // Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
-console.log(`Does isSum50 add up to 50: ${isSum50}`);
+const result1 = `Does isSum50 add up to 50: ${isSum50}`;
+console.log(result1);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
-console.log(`Is isTwoOdd odd: ${isTwoOdd}`);
+const result2 = `Is isTwoOdd odd: ${isTwoOdd}`;
+console.log(result2);
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
