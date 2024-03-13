@@ -81,3 +81,29 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
 //   Math Problems
+
+const totalBudget = 175;
+const totalDistance = 1500;
+const averageFuelCost = 3;
+
+const totalGallonsAfforded = totalBudget / averageFuelCost;
+
+console.log(`Total gallons afforded: ${totalGallonsAfforded}`);
+
+// 55 miles per hour
+const milesPerGallon55 = totalDistance/30;
+
+console.log(`At 55 m/h you will need ${milesPerGallon55} gallons of fuel.`);
+
+// 60 miles per hour
+const milesPerGallon60 = totalDistance/28;
+
+console.log(`At 60 m/h you will need ${milesPerGallon60} gallons of fuel.`);
+
+// 75 miles per hour
+const milesPerGallon75 = totalDistance/23;
+
+console.log(`At 75 m/h you will need ${milesPerGallon75} gallons of fuel.`);
+
+console.log('You will be able to achieve your destination if you drive between 55 and 60 miles per hour');
+console.log('Have a wonderful trip!');
